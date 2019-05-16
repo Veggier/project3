@@ -9,7 +9,7 @@ jQuery (document) . ready(function ($) {
         axios.get('http://statenweb.mockable.io/conversions/').then(function(result){
             inchestocentimeter = result.data[inchestocentimeter];
             var total = (inches) * (inchestocentimeter);
-            $("#totalinch").html(total + ' cm');
+            $("#totalinch").html(total + ' inch');
         });
     });
     $('#converterinch').on('submit', function(event){
@@ -23,7 +23,7 @@ jQuery (document) . ready(function ($) {
             centimeterstoinches = result.data[centimeterstoinches];
             var total = (centimeters) * (centimeterstoinches);
            
-            $("#totalcm").html(total +' inch');
+            $("#totalcm").html(total +' cm');
         });
     });
 }); 
